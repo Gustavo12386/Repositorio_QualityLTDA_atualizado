@@ -1,0 +1,60 @@
+/*variáveis globais*/
+$main-color: #425F8C;
+$main-font: 'Archivo', sans-serif;
+$font-secondary: 'Comfortaa', sans-serif;
+$color-secondary: #4d4f4f;
+$color-text-black: #000;
+$color-text-body: #fff;
+
+.interface{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header{
+  padding: 30px;
+}
+
+.header > .interface{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a{
+  color: $color-text-black;
+  text-decoration: none;
+  font-family: $font-secondary;
+  font-size: 16px;
+}
+
+header a:hover{
+  color: $color-secondary;
+  transform: scale(1.1);
+}
+
+.header nav ul{
+  list-style: none;
+}
+
+.header nav ul li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header .btn-contact button{
+  padding: 20px 40px;
+  white-space: nowrap;
+  font-size: 18px;
+  font-family: $main-font;
+  font-weight: 700;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;  
+}
+
+header .btn-contact button:hover{
+  background-color: $color-secondary;
+  cursor: pointer;
+}

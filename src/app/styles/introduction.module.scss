@@ -1,0 +1,108 @@
+/*variáveis globais*/
+$main-color: #425F8C;
+$main-font: 'Archivo', sans-serif;
+$font-secondary: 'Comfortaa', sans-serif;
+$color-secondary: #474A4B;
+$color-text-black: #000;
+$color-text-body: #fff;
+
+.interface {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../public/bg.jpg');
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  min-height: 77vh;
+}
+
+.title{
+  font-family: $main-font;
+  width: 683px;
+  height: 52px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: $color-text-body; 
+}
+
+.description1{
+  font-family: $font-secondary;  
+  color: $color-text-body;
+  margin-top: 20px;  
+  height: 70px;
+  width: 673px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.description2{
+  font-family: $font-secondary;  
+  color: $color-text-body;
+  margin-top: 20px;  
+  height: 120px;
+  width: 490px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.certificate {
+  width: 30%;
+  height: 50%;  
+}
+
+.logo {
+  width: 40%;
+  height: 50%; 
+  position: relative;
+  bottom: 20vh;
+}
+
+.section.introduction {
+  padding: 40px 4%;
+}
+
+.flex{
+  display: flex;  
+  margin-top: 10px;
+}
+
+.section.introduction .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+.text-top{
+  width: 50%;
+  padding: 0 25px; 
+  margin-top: 10vh;  
+  margin-left: 5vh;
+  
+}
+
+.text-top2{
+    width: 50%;
+    padding: 0 100px;    
+    margin-top: 10vh;
+}
+
+
+
+
+
+
+
+
+
+
+

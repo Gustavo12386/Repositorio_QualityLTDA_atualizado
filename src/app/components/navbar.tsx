@@ -1,11 +1,12 @@
 import Image from "next/image";
 import logo from "../../../public/logo.png";
+import styles from "../styles/navbar.module.scss";
 
 export default function Navbar() {
   return(
-    <header>
-        <div className="interface">
-            <div className="logo">
+    <header className={styles.header}>
+        <div className={styles.interface}>
+            <div className={styles.logo}>
                 <a href="#">
                 <Image
                     src={logo}
@@ -13,7 +14,7 @@ export default function Navbar() {
                 />
                 </a>
             </div>
-            <nav className="menu desktop">
+            <nav className={styles.menu}>
                 <ul>
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Especialidades</a></li>
@@ -23,7 +24,7 @@ export default function Navbar() {
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
-            <div className="btn-contact">
+            <div className={styles['btn-contact']}>
             <a href="#">
                 <button>Trabalhe Conosco</button>
             </a>  
