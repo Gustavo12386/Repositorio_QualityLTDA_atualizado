@@ -1,0 +1,114 @@
+/*variáveis globais*/
+$main-color: #425F8C;
+$main-font: 'Archivo', sans-serif;
+$font-secondary: 'Comfortaa', sans-serif;
+$color-secondary: #474A4B;
+$color-text-black: #000;
+$color-text-body: #fff;
+
+.section.acting {
+  padding: 40px 4%;   
+}
+
+.interface{
+   background-color: #EBECED;
+   padding: 12px;
+}
+
+.divtitle{
+    width: 100%;
+    text-align: center;   
+    font-family: $main-font;
+    font-weight: 700; 
+    margin-top: 50px;
+}
+
+.title{
+  font-family: $main-font;  
+  height: 68px;
+  font-weight: 700;
+  font-size: 36px;  
+  color: $color-text-black;  
+}
+
+.svg{
+  width: 2%;
+  height: 2%;  
+}
+
+.divdescription{
+   display: flex; 
+   text-align: center;
+   justify-content: center;
+   gap: 10px; 
+   font-family: $font-secondary;
+}
+
+.topicslist1{
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;   
+    justify-content: center; 
+}
+
+.topicslist2{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;   
+    justify-content: center; 
+}
+
+.topicslist3{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;   
+    justify-content: center; 
+}
+
+.topic1{
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;    
+}
+
+.topic2{
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;    
+}
+
+.topic3{
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;    
+}
+
+.topic4{
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;    
+}
