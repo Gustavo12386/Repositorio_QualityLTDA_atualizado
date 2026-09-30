@@ -1,0 +1,117 @@
+/*variáveis globais*/
+$main-color: #425F8C;
+$main-font: 'Archivo', sans-serif;
+$font-secondary: 'Comfortaa', sans-serif;
+$color-secondary: #474A4B;
+$color-text-black: #000;
+$color-text-body: #fff;
+
+.section.especialization {
+  padding: 40px 4%;
+}
+
+.flex{
+  display: flex;  
+  margin-top: 10px;
+}
+
+.section.especialization .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+.divtitle{
+    width: 100%;
+    text-align: center;   
+    font-family: $main-font;
+    font-weight: 700; 
+    margin-top: 50px;
+}
+
+.title1{
+  font-family: $main-font;  
+  height: 68px;
+  font-weight: 700;
+  font-size: 36px;  
+  color: $color-text-black;  
+}
+
+.underlined1{
+    width: 10%;
+    height: 4px;
+    background-color: $main-color;    
+    position: relative;
+    top: -30px;
+    left: 45%;
+}
+
+.underlined2{
+    width: 50%;
+    height: 4px;
+    background-color: $main-color;    
+    position: relative;
+    top: -30px;
+    left: 25%;
+}
+
+.title2{
+  font-family: $main-font;  
+  height: 68px;
+  font-weight: 700;
+  font-size: 30px;  
+  color: $color-text-black; 
+  text-align: center;
+}
+
+.title3{
+  font-family: $main-font;  
+  white-space: nowrap;
+  height: 68px;
+  font-weight: 700;
+  font-size: 29px;  
+  color: $color-text-black; 
+  text-align: center;
+}
+
+.text-top{
+  width: 50%;
+  padding: 0 25px; 
+  margin-top: 5vh;  
+  margin-left: 5vh;
+}
+
+.text-top2{
+    width: 50%;        
+    margin-top: 5vh;
+    margin-right: 40px;
+}
+
+.topics1{
+  font-family: $font-secondary;
+  font-size: 18px;
+  color: $color-secondary;  
+  line-height: 1.5;  
+  
+}
+
+.divtopics1{
+    width: 100%;     
+    position: relative;
+    top: -10px;
+    padding: 0 10vh;
+}
+
+.divtopics2{
+    width: 100%;
+    padding: 0 9vh;   
+    position: relative;
+    top: -10px; 
+    left: 10vh;
+}
+
+.topics2{
+  font-family: $font-secondary;
+  font-size: 18px;
+  color: $color-secondary;  
+  line-height: 1.5; 
+}
