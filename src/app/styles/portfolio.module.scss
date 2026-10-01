@@ -1,0 +1,49 @@
+/*variáveis globais*/
+$main-color: #425F8C;
+$main-font: 'Archivo', sans-serif;
+$font-secondary: 'Comfortaa', sans-serif;
+$color-secondary: #474A4B;
+$color-text-black: #000;
+$color-text-body: #fff;
+
+.section.portfolio {
+  padding: 40px 4%;   
+}
+
+.interface{
+   padding: 20px;
+}
+
+.divtitle{
+    width: 100%;
+    text-align: center;    
+    margin-top: 50px;
+}
+
+.title{
+  font-family: $main-font;
+  font-weight: 700; 
+  font-size: 36px;
+}
+
+.divcontent{
+    width: 100%;
+    text-align: center;   
+    margin-top: 50px;    
+}
+
+.subtitle{
+  font-family: $font-secondary;
+  font-weight: 700; 
+  font-size: 22px;
+  color: $main-color;
+}
+
+.description{
+  font-family: $font-secondary;
+  font-weight: 700; 
+  font-size: 18px;  
+  margin-top: 20px;
+  width: 170vh;
+  margin-left: 100px;
+}

@@ -1,0 +1,42 @@
+/*variáveis globais*/
+$main-color: #425F8C;
+$main-font: 'Archivo', sans-serif;
+$font-secondary: 'Comfortaa', sans-serif;
+$color-secondary: #474A4B;
+$color-text-black: #000;
+$color-text-body: #fff;
+
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 171vh;
+  margin-top: -30px;  
+}
+
+.paginationbutton {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  background-color: $main-color;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.paginationbutton:hover{
+  color: $color-secondary;
+}
+
+.paginationbutton:disabled {  
+  opacity: 0;
+  cursor: not-allowed;
+}
+
