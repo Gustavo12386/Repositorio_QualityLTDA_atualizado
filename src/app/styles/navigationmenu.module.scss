@@ -1,0 +1,106 @@
+/*variáveis globais*/
+$main-color: #425F8C;
+$main-font: 'Archivo', sans-serif;
+$font-secondary: 'Comfortaa', sans-serif;
+$color-secondary: #474A4B;
+$color-text-black: #000;
+$color-text-body: #fff;
+
+.navigationdiv {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;  
+  align-items: center;
+  justify-content: center;
+  
+  input {
+    display: none;
+  }
+
+  label {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 113.83px;
+    height: 36px;
+
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+
+    color: $color-secondary;
+
+    cursor: pointer;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      bottom: -16px;
+
+      width: 0;
+      height: 4px;
+
+      background: $main-color;
+
+      transition: 0.2s ease;
+    }
+
+    &:hover {
+      font-weight: 600;
+      color: $color-text-black;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  
+  input:checked + label {
+    font-weight: 400;
+    color: $color-text-black;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.navigationLabel.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    width: 113.83px;
+    height: 52px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 47px;
+    height: 36px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: $color-text-black;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 114.33px;
+    height: 4px;
+    background: $main-color;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+

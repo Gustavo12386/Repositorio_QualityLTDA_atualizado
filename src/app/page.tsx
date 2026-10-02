@@ -3,6 +3,7 @@ import Introduction from "./components/introduction";
 import Especialization from "./components/especialization";
 import Acting from "./components/acting";
 import Portfolio from "./components/portfolio";
+import Clients from "./components/clients";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Especialization/>
       <Acting/>
       <Portfolio />
+      <Clients/>
     </>  
   );
 }

@@ -8,7 +8,7 @@ interface PaginationProps {
 }
 
 
-export default function PaginationPortfolio({ currentPage, totalPages, onPageChange }: PaginationProps){
+export default function Pagination({ currentPage, totalPages, onPageChange }: PaginationProps){
 
   // Funções para lidar com a navegação entre páginas
   const handlePrevious = () => {
