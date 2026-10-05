@@ -6,7 +6,7 @@ export default function TrabalheConosco() {
        <div className={styles.interface}>
             <div className={styles.divcontent}>
                 <h1 className={styles.title}>Trabalhe Conosco</h1>
-                <p className={styles.subtitle}>Se você se indentificou com a nossa empresa e deseja enviar seu currículo,
+                <p className={styles.subtitle}>Se você se identificou com a nossa empresa e deseja enviar seu currículo,
                  preencha o formulario abaixo.
                 </p>
                 <form className={styles.form}>
