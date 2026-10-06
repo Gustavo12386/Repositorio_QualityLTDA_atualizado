@@ -17,7 +17,7 @@ $color-text-body: #fff;
 
 .flex{
   margin-top: 60px;
-  gap: 400px;  
+  justify-content: center;
   display: flex;
 }
 
@@ -26,7 +26,11 @@ $color-text-body: #fff;
 }
 
 .divcontent1{
-  margin-left: 100px;
+  margin-left: 40vh;
+}
+
+.divcontent2{
+  margin-left: 60vh;
 }
 
 .divtitle2{
