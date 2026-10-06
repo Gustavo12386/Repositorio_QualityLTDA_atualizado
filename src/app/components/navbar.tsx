@@ -15,10 +15,12 @@ export default function Navbar() {
                 </a>
             </div>
             <nav className={styles.menu}>
-                <ul>
+                <ul className={styles.list1}>
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Atuações</a></li>
+                    <li><a href="#">Atuações</a></li>                   
+                </ul>
+                <ul className={styles.list2}>
                     <li><a href="#">Portfólio</a></li>
                     <li><a href="#">Clientes</a></li>
                     <li><a href="#">Contato</a></li>

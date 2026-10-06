@@ -58,3 +58,34 @@ header .btn-contact button:hover{
   background-color: $color-secondary;
   cursor: pointer;
 }
+
+@media screen and (min-width: 744px) and (max-width: 1024px) {
+     .header{
+       padding-left: 21px;            
+    }
+
+    .header nav ul li{     
+      padding: 2 0 2px;
+      margin-left: 38px;      
+    }    
+
+    .list1{
+      display: flex;
+      position: relative;
+      left: -16px;
+    }
+
+    .list2{
+      position: relative;
+      left: -4px;
+    }
+
+    .nav{
+      width: 40%;       
+    }    
+
+    .header .btn-contact button{
+      padding: 20px 30px;
+    }
+    
+}

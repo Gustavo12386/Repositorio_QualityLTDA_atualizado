@@ -25,7 +25,7 @@ export default function Especialization(){
                     </div>                                     
                   </div>                
                   <div className={styles['text-top2']}>
-                    <h1 className={styles.title3}>Engenharia de instalações em edificações</h1>
+                    <h1 className={styles.h1}>Engenharia de instalações<span className={styles.title3}>em edificações</span></h1>
                     <div className={styles.underlined2}></div>
                     <div className={styles.divtopics2}>
                         <ul className={styles.topics2}>

@@ -96,7 +96,51 @@ $color-text-body: #fff;
     margin-top: 10vh;
 }
 
+@media screen and (min-width: 744px) and (max-width: 1024px) {
+    .interface{
+        background-position: inherit;
+        background-size: 100%;       
+    }
 
+    .text-top{      
+      padding: 0px;      
+      margin-left: 4vh;  
+    }
+
+    .text-top2{
+      width: 50%;
+      padding: 0 0px;    
+      margin-top: 10vh;
+      margin-left: 7px;
+    }
+
+    .description1{      
+      width: 350px;      
+      font-size: 14px;      
+    }
+
+    .title{      
+      width: 600px;      
+      font-size: 28px;      
+    }
+
+    .description2{      
+      font-size: 14px;   
+      width: 300px;  
+    }
+
+    .certificate {
+      width: 40%;
+      margin-top: 30px;
+    }
+
+    .logo {
+      width: 40%;
+      height: 50%; 
+      position: relative;
+      bottom: 15.6vh;
+    }
+}  
 
 
 
