@@ -6,6 +6,7 @@ import Portfolio from "./components/portfolio";
 import Clients from "./components/clients";
 import TrabalheConosco from "./components/trabalheconosco";
 import Footer from "./components/footer";
+import Contato from "./components/contact";
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
       <Acting/>
       <Portfolio />
       <Clients/>
+      <Contato/>
       <TrabalheConosco/>
-      <Footer/>
+      <Footer/>      
     </>  
   );
 }
