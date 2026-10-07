@@ -54,9 +54,30 @@ header .btn-contact button{
   border: none;  
 }
 
+header .btn-contact2 button{
+  padding: 20px 40px;
+  white-space: nowrap;
+  font-size: 18px;
+  font-family: $main-font;
+  font-weight: 700;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;  
+  display: none;
+}
+
 header .btn-contact button:hover{
   background-color: $color-secondary;
   cursor: pointer;
+}
+
+.mobile-menu-icon{
+  display: none;
+}
+
+.mobile-menu{
+  display: none;
 }
 
 @media screen and (min-width: 744px) and (max-width: 1376px) {
@@ -83,3 +104,77 @@ header .btn-contact button:hover{
     
 }
 
+@media screen and (min-width: 360px) and (max-width: 730px) {
+    .header {
+      display: flex;
+      align-items: center;          
+      justify-content: space-between;
+      flex-wrap: wrap;  
+    }
+
+    .header nav ul li {
+      padding: 4px 25;
+    }
+    
+    .logo{
+      width: 77px;
+      height: 60px; 
+      position: relative;
+      right: 20px;   
+    }  
+
+    header .btn-contact2 button {
+        padding: 12px 4px;
+        font-size: 10px;
+        display: block;
+        position: relative;
+        left: 18px; 
+        bottom: 4px;
+    }
+
+    header .btn-contact button {
+       display: none;
+    }
+
+    .menu{
+      display: none;
+    }    
+
+    .mobile-menu-icon{
+      display: block;      
+      cursor: pointer;
+      width: 30px;      
+      background: none;   
+      border: none;     
+      position: relative;
+     
+      top: 8px;
+    }
+
+    .mobile-menu{
+       display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;        
+      flex-basis: 100%;
+      margin-bottom: 30px;
+      position: relative;      
+    }
+
+    .mobile-menu .menu2{
+       display: block;       
+    }
+
+    header a:hover{
+      background-color: $main-color;
+      padding: 5px 20px;
+      color: $color-text-body;
+      transform: scale(1.1);
+    }
+
+    .header a {
+      font-size: 9px;
+    }
+
+}  
