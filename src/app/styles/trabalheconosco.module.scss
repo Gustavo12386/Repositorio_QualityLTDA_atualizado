@@ -82,3 +82,10 @@ $color-text-body: #fff;
 .button:hover{
     background-color: darken($main-color, 10%);
 }
+
+@media screen and (min-width: 744px) and (max-width: 1024px) {
+   .button{
+    width: 10%;    
+    margin-right: 28vh;
+  }
+}  

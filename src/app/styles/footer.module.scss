@@ -134,12 +134,12 @@ $color-text-body: #fff;
 .text{
   color: $color-text-body;
   font-family: $font-secondary;  
+  padding-bottom: 2vh;
 }
 
 .division3{    
     width: 90%;
-    height: 1px;
-    left: 106px;
+    height: 1px;    
     margin-bottom: 20px;    
     margin-left: 10vh;
     justify-content: center;
@@ -149,3 +149,50 @@ $color-text-body: #fff;
 .divtitile{
   margin-bottom: 2px;  
 }
+
+@media screen and (min-width: 744px) and (max-width: 1024px) {
+   .logo{
+      margin-top: 60px;  
+      position: relative;
+      left: 4vh;
+      filter: drop-shadow(9px 0px 8px rgba(0, 0, 0, 0.25));
+    }
+
+    .division1{    
+        position: relative;        
+        left: 3.6vh;
+    }
+
+    .division2{    
+        position: relative;        
+        left: -6vh;
+    }
+
+    .topics2{
+      display: flex;
+      flex-direction: column; 
+      gap: 10px;
+      margin-top: 50px;
+      position: relative;
+      right: 11vh;   
+    }
+
+    .topicaddress{        
+      width: 20vh;   
+    }
+
+    .divphone{   
+      position: relative;     
+      top: 6px;
+    }
+
+    .division3{    
+        width: 90%;
+        height: 1px;        
+        margin-bottom: 20px;    
+        margin-left: 5vh;
+        justify-content: center;
+        border: 1px solid $color-text-body;
+    }
+    
+}    
