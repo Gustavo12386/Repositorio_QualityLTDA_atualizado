@@ -65,6 +65,13 @@ $color-text-body: #fff;
     justify-content: center; 
 }
 
+.topicslist4{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;   
+    justify-content: center; 
+}
+
 .topic1{
   padding: 20px 20px;
   white-space: nowrap;
@@ -112,3 +119,158 @@ $color-text-body: #fff;
   border-radius: 30px;
   border: none;    
 }
+
+.topic5{
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;    
+}
+
+.topic6{
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;    
+}
+
+.topic7{
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;    
+}
+
+.topic8{
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;    
+}
+
+.topic9{
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;    
+}
+
+.topic10{
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;    
+}
+
+.topic11{
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-text-body;
+  background-color: $main-color;
+  border-radius: 30px;
+  border: none;    
+}
+
+@media screen and (min-width: 744px) and (max-width: 1024px) {
+
+    .interface{
+      background-color: #EBECED;
+      padding-bottom: 20px;  
+      padding: 40px;
+      padding-top: 1px;
+      position: relative;      
+    }
+
+    
+    
+
+    .topic1{
+      width: 210px;
+    }
+
+    .topic2{
+      width: 320px;
+      
+    }
+
+    .topic3{
+     
+      width: 240px;
+    }
+
+    .topic4{
+      
+      width: 280px;
+    }
+
+    .topic5{
+      
+      width: 208px;
+    }
+
+    .topic6{
+      width: 230px;
+    }
+
+    .topic7{
+    
+      width: 195px;
+    }
+
+    .topic8{
+      width: 240px;
+      
+    }
+
+    .topic9{
+      width: 240px;
+   
+    }
+
+    .topic10{
+      
+      width: 300px;
+    }
+
+    .topic11{
+     
+      width: 277px;
+    }
+
+    .divdescription{
+      margin-bottom: 20px;
+    }
+}  
