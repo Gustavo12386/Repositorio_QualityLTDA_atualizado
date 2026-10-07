@@ -102,5 +102,72 @@ $color-text-body: #fff;
     flex-grow: 0;
 }
 
+@media screen and (min-width: 744px) and (max-width: 1024px) {
+    .navigationdiv {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  position: relative;  
+  align-items: center;
+  justify-content: center;
+  
+  input {
+    display: none;
+  }
 
+  label {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 113.83px;
+    height: 36px;
+
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+
+    color: $color-secondary;
+
+    cursor: pointer;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      bottom: -16px;
+
+      width: 0;
+      height: 4px;
+
+      background: $main-color;
+
+      transition: 0.2s ease;
+    }
+
+    &:hover {
+      font-weight: 600;
+      color: $color-text-black;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  
+  input:checked + label {
+    font-weight: 400;
+    color: $color-text-black;
+
+    &::after {
+      width: 50%;
+    }
+  }
+}
+
+}  
 

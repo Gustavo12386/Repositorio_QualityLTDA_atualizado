@@ -40,3 +40,9 @@ $color-text-body: #fff;
   cursor: not-allowed;
 }
 
+@media screen and (min-width: 744px) and (max-width: 1024px) {
+   .pagination{
+     gap: 55vh;
+     margin-top: -60px;
+   }
+}  

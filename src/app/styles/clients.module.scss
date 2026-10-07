@@ -44,20 +44,20 @@ $color-text-body: #fff;
 }
 
 .divtopicsindustry{
+    display: flex; 
+    gap: 10vh;
     margin-top: 9vh;
     margin-left: 39vh;    
     animation: FadeIn 1.5s ease-in-out forwards;
 }
 
-.topicsindustry{
-   font-family: $font-secondary;
-   color: $color-secondary;   
-   display: flex;
-   flex-wrap: wrap;
+.divtopics2industry{
+  margin-top: -5px;
 }
 
-.topicindustry{
-  width: 50%;  
+.topicsindustry{
+   font-family: $font-secondary;
+   color: $color-secondary;    
 }
 
 .divtopicsestatal{
@@ -80,15 +80,11 @@ $color-text-body: #fff;
 .topicssector{
    font-family: $font-secondary;
    color: $color-secondary;   
-   display: flex;
-   flex-wrap: wrap;
 }
 
-.topicsector{
-  width: 50%;  
-}
-
-.divtopicconstruction{
+.divtopicsconstruction{
+  display: flex;
+  gap: 10vh;
   margin-top: 9vh;
   margin-left: 39vh;     
   animation: FadeIn 1.5s ease-in-out forwards;    
@@ -96,13 +92,11 @@ $color-text-body: #fff;
 
 .topicsconstruction{
    font-family: $font-secondary;
-   color: $color-secondary;   
-   display: flex;
-   flex-wrap: wrap;
+   color: $color-secondary;      
 }
 
-.topicconstruction{
-  width: 50%; 
+.divtopics2construction{
+  margin-top: -2px;
 }
 
 .divtopicspublic{
@@ -137,3 +131,45 @@ $color-text-body: #fff;
     transform: translateY(0);
   }
 }
+
+@media screen and (min-width: 744px) and (max-width: 1024px) {
+  .divtopicsindustry{
+    display: flex; 
+    gap: 3vh;
+    margin-top: 6vh;
+    margin-left: -5vh;  
+  }
+
+  .divtopics1industry{
+    margin-left: 9vh;
+  }
+
+  .divtopicsestatal{
+    margin-top: 5vh;
+    margin-left: 10vh;    
+  }
+
+  .divtopicsector{
+    margin-top: 5vh;
+    margin-left: 9vh;       
+  }
+
+  .divtopicsconstruction{
+    display: flex; 
+    gap: 3vh;
+    margin-top: 4vh;
+    margin-left: 2vh;
+  }
+
+  .divtopicspublic{
+    margin-top: 4vh;
+    margin-left: 9vh;     
+  }
+
+  .divtopicsothers{
+    margin-top: 2vh;
+    margin-left: 26vh;    
+    animation: FadeIn 1.5s ease-in-out forwards;   
+  }  
+  
+}  

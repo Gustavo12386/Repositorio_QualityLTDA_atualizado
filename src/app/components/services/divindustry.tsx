@@ -3,6 +3,7 @@ import styles from '../../styles/clients.module.scss';
 export default function DivIndustry() {
   return(
     <div className={styles.divtopicsindustry}>
+        <div className={styles.divtopics1industry}>
           <ul className={styles.topicsindustry}>
             <li className={styles.topicindustry}>Air Products</li>
             <li className={styles.topicindustry}>Alstom Brasil Ltda.</li>
@@ -14,6 +15,10 @@ export default function DivIndustry() {
             <li className={styles.topicindustry}>Columbian Chemicals Brasil</li>
             <li className={styles.topicindustry}>Cristal Pigmentos do Brasil S.A. (Millennium Inorganic Chemical)</li>
             <li className={styles.topicindustry}>Cultrosa - Culturas Tropicais S.A.</li>
+          </ul> 
+        </div>
+        <div className={styles.divtopics2industry}>
+           <ul className={styles.topicsindustry}>
             <li className={styles.topicindustry}>Deten Química S.A.</li>
             <li className={styles.topicindustry}>Distribuidora de Águas de Camaçari S.A.</li>
             <li className={styles.topicindustry}>DOW Brasil S.A.</li>
@@ -26,6 +31,7 @@ export default function DivIndustry() {
             <li className={styles.topicindustry}>Ucar Produtos de Carbono S.A.</li>
             <li className={styles.topicindustry}>White Martins</li>  
           </ul>   
+        </div>                  
     </div>
   );  
 }    
