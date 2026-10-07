@@ -12,7 +12,7 @@ $color-text-body: #fff;
   background-position: bottom right;
   background-repeat: no-repeat; 
   background-attachment: fixed; 
-  min-height: 77vh;
+  min-height: 80vh;
 }
 
 .title{
@@ -96,10 +96,16 @@ $color-text-body: #fff;
     margin-top: 10vh;
 }
 
-@media screen and (min-width: 744px) and (max-width: 1024px) {
-    .interface{
-        background-position: 25% 16%;
-        background-size: 100%;       
+@media screen and (min-width: 744px) and (max-width: 1376px) {
+    .interface {
+        min-height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .section.introduction {
+        padding: 40px 4%;
     }
 
     .text-top{      

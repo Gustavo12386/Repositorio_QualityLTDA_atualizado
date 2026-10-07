@@ -48,14 +48,14 @@ $color-text-body: #fff;
   margin-left: 100px;
 }
 
-@media screen and (min-width: 744px) and (max-width: 1024px) {
+@media screen and (min-width: 744px) and (max-width: 1376px) {
    
   .interface{
     padding: 40px;
     padding-top: 20px;
   }
-  .description{
-     margin-left: 9vh;
-     width: 500px;
+  .description{     
+     width: 50vh;   
+     transform: translate(2%);  
    }
 }  

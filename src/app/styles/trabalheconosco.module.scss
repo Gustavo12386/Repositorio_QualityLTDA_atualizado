@@ -76,14 +76,14 @@ $color-text-body: #fff;
     font-weight: 700; 
     border: none;
     cursor: pointer;
-    margin-right: 90vh;
+    margin-right: 105vh;
 }
 
 .button:hover{
     background-color: darken($main-color, 10%);
 }
 
-@media screen and (min-width: 744px) and (max-width: 1024px) {
+@media screen and (min-width: 744px) and (max-width: 1376px) {
    .button{
     width: 10%;    
     margin-right: 28vh;
