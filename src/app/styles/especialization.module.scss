@@ -176,4 +176,92 @@ h1 .title3{
   .flex{
     margin-top: -30px;
   }
+
 }  
+
+
+  @media screen and (min-width: 360px) and (max-width: 730px) {
+      .section.especialization {
+        padding: 30px 5%;
+      }
+
+      .interface {
+        padding-bottom: 30px;
+      }
+
+       .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+      }
+
+       .divtitle {
+        margin-top: 30px;
+      }
+
+       .title1 {
+        height: auto;
+        font-size: 28px;
+        line-height: 1.2;
+      }
+
+      .title2 {
+        height: auto;
+        font-size: 25px;
+        line-height: 1.2;
+      }
+
+      .title3 {
+        height: auto;
+        font-size: 24px;
+        line-height: 1.2;
+        white-space: normal;
+        text-align: center;
+      }
+
+      .h1 {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .underlined1 {
+        width: 100px;
+        height: 4px;
+        position: static;
+        margin: 10px auto 0;
+      }
+
+      .underlined2 {
+        width: 120px;
+        height: 4px;
+        position: static;
+        margin: 10px auto 20px;
+      }
+
+      .text-top,
+      .text-top2 {
+        width: 100%;
+        padding: 0;
+        margin: 20px;
+      }
+
+      .divtopics1,
+      .divtopics2 {
+        width: 100%;
+        padding: 0;
+        position: static;
+        margin: 0;
+      }
+
+       .topics1,
+        .topics2 {
+          width: 100%;
+          font-size: 13px;
+          line-height: 1.5;
+          margin: 15px 25;
+        }
+
+
+  }  
