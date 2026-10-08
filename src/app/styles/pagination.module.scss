@@ -46,3 +46,10 @@ $color-text-body: #fff;
      margin-top: -60px;
    }
 }  
+
+@media screen and (min-width: 360px) and (max-width: 730px) {
+    .pagination{
+     gap: 32vh;
+     margin-top: -60px;
+   }
+}  
