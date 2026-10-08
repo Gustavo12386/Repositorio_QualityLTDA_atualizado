@@ -262,3 +262,25 @@ $color-text-body: #fff;
       margin-bottom: 20px;
     }
 }  
+
+ @media screen and (min-width: 360px) and (max-width: 730px) {
+    .topicslist1{    
+     display: flex;
+     flex-direction: column;    
+    }
+
+    .topicslist2{
+       display: flex;
+       flex-direction: column;  
+    }
+
+    .topicslist3{
+       display: flex;
+       flex-direction: column;  
+    }
+
+    .topicslist4{
+      display: flex;
+       flex-direction: column;  
+    }
+ } 
