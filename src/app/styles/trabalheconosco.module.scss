@@ -89,3 +89,22 @@ $color-text-body: #fff;
     margin-right: 28vh;
   }
 }  
+
+@media screen and (min-width: 360px) and (max-width: 730px) {
+    .input{
+      width: 90%;   
+    } 
+
+    .select{
+      width: 90%;
+    }
+
+    .textarea{
+      width: 90%;
+    }
+
+    .button{
+      width: 20%;    
+      margin-right: 32vh;
+    }
+}  
