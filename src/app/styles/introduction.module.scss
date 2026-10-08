@@ -148,9 +148,70 @@ $color-text-body: #fff;
     }
 }  
 
+@media screen and (min-width: 360px) and (max-width: 730px) {
+     .section.introduction {
+    padding: 40px 20px;
+  }
 
+  .flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 0;
+  }
 
+  .title {
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    line-height: 30px;
+  }
 
+  .description1 {
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 20px;
+  }
+
+  .description2 {
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 20px;
+  }
+
+  .text-top {
+    width: 86%;
+    padding: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .text-top2 {
+    width: 90%;
+    padding: 0;
+    margin: 40px;
+    margin-right: 20px;
+  }
+
+  .certificate {
+    width: 40%;    
+    margin: 30px auto 0;
+    display: block;
+  }
+
+  .logo {
+    width: 40%;    
+    position: static;
+    margin: 30px auto 0;
+    display: block;
+  }
+
+}  
 
 
 
