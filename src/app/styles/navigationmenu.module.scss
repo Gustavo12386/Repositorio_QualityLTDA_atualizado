@@ -72,6 +72,20 @@ $color-text-body: #fff;
   }
 }
 
+.divinputs{
+  display: flex;
+  gap: 2vh
+}
+
+.divinput1{
+  display: flex;
+}
+
+.divinput2{
+  display: flex;
+  gap: 1vh;
+}
+
 .navigationLabel.active{
     display: flex;
     flex-direction: column;
@@ -103,7 +117,7 @@ $color-text-body: #fff;
 }
 
 @media screen and (min-width: 744px) and (max-width: 1024px) {
-    .navigationdiv {
+  .navigationdiv {
   display: flex;
   align-items: flex-start;
   gap: 9px;
@@ -171,3 +185,77 @@ $color-text-body: #fff;
 
 }  
 
+@media screen and (min-width: 360px) and (max-width: 730px) {
+  .navigationdiv {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  position: relative;  
+  align-items: center;
+  justify-content: center;
+  
+  input {
+    display: none;
+  }
+
+  label {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 113.83px;
+    height: 36px;
+
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+
+    color: $color-secondary;
+
+    cursor: pointer;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      bottom: -5px;
+
+      width: 0;
+      height: 4px;
+
+      background: $main-color;
+
+      transition: 0.2s ease;
+    }
+
+    &:hover {
+      font-weight: 600;
+      color: $color-text-black;
+
+      &::after {
+        width: 50%;
+      }
+    }
+  }
+
+  
+  input:checked + label {
+    font-weight: 400;
+    color: $color-text-black;
+
+    &::after {
+      width: 50%;
+    }
+  }
+}
+
+.divinputs{
+  display: flex;
+  flex-direction: column;
+}
+
+
+}  

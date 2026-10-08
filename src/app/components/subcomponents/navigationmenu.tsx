@@ -15,31 +15,35 @@ export default function NavigationMenu({updateTopic}: NavigationProps) {
     };
 
     return(
-      <div className={styles.navigationdiv}>
-      <input className={styles.page0}
-        type="radio"
-        name="page-option"
-        id="page-0"
-        checked={selected === 0}
-        onChange={() => handleChange(0)}/>
-      <label htmlFor="page-0">Industrial</label>
-      <input className={styles.page1}
-        type="radio"
-        name="page-option"
-        id="page-1"
-        checked={selected === 1}
-        onChange={() => handleChange(1)}
-        />
-      <label htmlFor="page-1">Estatal</label>
-      <input className={styles.page2}
-        type="radio"
-        name="page-option"
-        id="page-2"
-        checked={selected === 2}
-        onChange={() => handleChange(2)}
-        />
-      <label htmlFor="page-2">Setor Privado</label> 
-      <input className={styles.page3}
+    <div className={styles.navigationdiv}>
+      <div className={styles.divinputs}>
+       <div className={styles.divinput1}>
+          <input className={styles.page0}
+          type="radio"
+          name="page-option"
+          id="page-0"
+          checked={selected === 0}
+          onChange={() => handleChange(0)}/>
+        <label htmlFor="page-0">Industrial</label>
+        <input className={styles.page1}
+          type="radio"
+          name="page-option"
+          id="page-1"
+          checked={selected === 1}
+          onChange={() => handleChange(1)}
+          />
+        <label htmlFor="page-1">Estatal</label>
+        <input className={styles.page2}
+          type="radio"
+          name="page-option"
+          id="page-2"
+          checked={selected === 2}
+          onChange={() => handleChange(2)}
+          />
+        <label htmlFor="page-2">Setor Privado</label> 
+      </div>  
+      <div className={styles.divinput2}>
+        <input className={styles.page3}
         type="radio"
         name="page-option"
         id="page-3"
@@ -63,6 +67,8 @@ export default function NavigationMenu({updateTopic}: NavigationProps) {
         onChange={() => handleChange(5)}
         />
       <label htmlFor="page-5">Outros</label> 
-    </div> 
-    );
+      </div>
+    </div>            
+  </div> 
+ );
 }        

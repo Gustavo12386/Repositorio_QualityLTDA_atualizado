@@ -173,3 +173,41 @@ $color-text-body: #fff;
   }  
   
 }  
+
+@media screen and (min-width: 360px) and (max-width: 730px) {
+    .divtopicsindustry{
+      display: flex; 
+      gap: 3vh;
+      margin-top: 6vh;
+      margin-left: 1vh;  
+    }
+
+    .divtopicsestatal{
+      margin-top: 5vh;
+      margin-left: 1vh;    
+    }
+
+    .divtopicsector{
+      margin-top: 5vh;
+      margin-left: 9vh;       
+    }
+
+    .divtopicsconstruction{
+      display: flex; 
+      gap: 3vh;
+      margin-top: 4vh;
+      margin-left: 1vh;
+    }
+
+    .divtopicspublic{
+      margin-top: 4vh;
+      margin-left: 4vh;     
+    }
+
+    .divtopicsothers{
+      margin-top: 2vh;
+      margin-left: 8vh;        
+    }  
+
+
+}  
