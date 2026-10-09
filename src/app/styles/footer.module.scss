@@ -150,7 +150,7 @@ $color-text-body: #fff;
   margin-bottom: 2px;  
 }
 
-@media screen and (min-width: 744px) and (max-width: 1376px) {
+@media screen and (min-width: 744px) and (max-width: 1440px) {
    .logo{
       margin-top: 60px;  
       position: relative;
@@ -201,3 +201,52 @@ $color-text-body: #fff;
     }
     
 }    
+
+  @media screen and (min-width: 360px) and (max-width: 730px) {
+         .division1{
+          display: none;
+        }
+
+         .division2{
+          display: none;
+        }
+
+        .flex{
+         display: flex;  
+         flex-direction: column;
+        }
+
+        .logo{          
+          margin-top: 20px;  
+          margin-left: 35px;      
+          width: 200px;
+          height: 150px;    
+        }
+
+        .topics1{
+          margin-left: 80px;  
+          margin-top: -15px;
+        }
+
+        .topics2{
+          margin-left: 73px;  
+          margin-top: -30px;
+          width: 200px;
+        }
+
+        .division3{    
+          width: 80%;
+          height: 1px; 
+          position: relative;       
+          bottom: 40px;  
+          margin-left: 34px;          
+        }
+
+        .text{
+          font-size: 15px;
+          width: 343px;
+          margin-top: -40px;
+          margin-left: 18px;
+        }
+
+  }   
