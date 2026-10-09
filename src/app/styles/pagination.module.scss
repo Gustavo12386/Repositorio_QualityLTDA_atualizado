@@ -50,6 +50,7 @@ $color-text-body: #fff;
 @media screen and (min-width: 360px) and (max-width: 730px) {
     .pagination{
      gap: 32vh;
-     margin-top: -60px;
+     position: relative;
+     bottom: 10vh
    }
 }  

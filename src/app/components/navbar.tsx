@@ -32,7 +32,7 @@ export default function Navbar() {
             </div>
             <nav className={styles.menu}>
                 <ul>
-                    <li><a href="#">Início</a></li>
+                    <li><a href="#inicio">Início</a></li>
                     <li><a href="#">Especialidades</a></li>
                     <li><a href="#">Atuações</a></li> 
                     <li><a href="#">Portfólio</a></li>

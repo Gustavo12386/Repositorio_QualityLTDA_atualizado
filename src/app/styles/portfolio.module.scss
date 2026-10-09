@@ -7,7 +7,8 @@ $color-text-black: #000;
 $color-text-body: #fff;
 
 .section.portfolio {
-  padding: 40px 4%;   
+  padding: 40px 4%;  
+  box-sizing: border-box; 
 }
 
 .interface{
@@ -23,7 +24,8 @@ $color-text-body: #fff;
 .title{
   font-family: $main-font;
   font-weight: 700; 
-  font-size: 36px;
+  font-size: clamp(24px, 2.5vw, 36px);
+  overflow-wrap: break-word;
 }
 
 .divcontent{
@@ -42,10 +44,11 @@ $color-text-body: #fff;
 .description{
   font-family: $font-secondary;
   font-weight: 700; 
-  font-size: 18px;  
-  margin-top: 20px;
-  width: 170vh;
-  margin-left: 100px;
+  font-size: clamp(14px, 1.3vw, 18px);
+  margin: 20px auto 0;
+  width: 100%;
+  max-width: 900px;
+  line-height: 1.6;  
 }
 
 @media screen and (min-width: 744px) and (max-width: 1440px) {
@@ -77,11 +80,12 @@ $color-text-body: #fff;
     }
 
     .description{      
-      font-size: 12px;      
-      width: 29vh;
-      justify-content: center; 
-      position: relative;
-      right: 6vh;
-      padding: 0 0 0 10.5px;
+      width: 100%;
+      max-width: 60%;
+      font-size: 14px;
+      margin: 20px auto 0;
+      padding: 10;
+      position: static;
+      text-align: center;
     }
 }  

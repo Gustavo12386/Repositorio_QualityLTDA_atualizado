@@ -8,20 +8,20 @@ $color-text-body: #fff;
 
 .section.clients {
   padding: 40px 4%;   
+  box-sizing: border-box;
 }
 
 .interface{
    background-color: #EBECED;  
-   padding: 20px;  
-   padding-top: 40px;
-   padding-bottom: 40px;
-   
+   width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;   
 }
 
 .divtitle{
     width: 100%;
     text-align: center;    
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .title{
@@ -43,12 +43,16 @@ $color-text-body: #fff;
     margin-top: 40px;    
 }
 
-.divtopicsindustry{
-    display: flex; 
-    gap: 10vh;
-    margin-top: 9vh;
-    margin-left: 39vh;    
-    animation: FadeIn 1.5s ease-in-out forwards;
+.divtopicsindustry,
+.divtopicsconstruction {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 40px;  
+  width: 100%;
+  margin: 50px;
+  animation: FadeIn 1.5s ease-in-out forwards;
 }
 
 .divtopics2industry{
@@ -61,9 +65,12 @@ $color-text-body: #fff;
 }
 
 .divtopicsestatal{
-    margin-top: 9vh;
-    margin-left: 45vh;     
-    animation: FadeIn 1.5s ease-in-out forwards; 
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin: 9vh auto 0;
+   animation: FadeIn 1.5s ease-in-out forwards; 
 }
 
 .topicsestatal{
@@ -72,8 +79,11 @@ $color-text-body: #fff;
 }
 
 .divtopicsector{
-    margin-top: 9vh;
-    margin-left: 39vh;   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 9vh auto 0;  
     animation: FadeIn 1.5s ease-in-out forwards;    
 }
 
@@ -82,13 +92,6 @@ $color-text-body: #fff;
    color: $color-secondary;   
 }
 
-.divtopicsconstruction{
-  display: flex;
-  gap: 10vh;
-  margin-top: 9vh;
-  margin-left: 39vh;     
-  animation: FadeIn 1.5s ease-in-out forwards;    
-}
 
 .topicsconstruction{
    font-family: $font-secondary;
@@ -100,8 +103,11 @@ $color-text-body: #fff;
 }
 
 .divtopicspublic{
-  margin-top: 9vh;
-  margin-left: 44vh;      
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 9vh auto 0;      
   animation: FadeIn 1.5s ease-in-out forwards;   
 }
 
@@ -111,8 +117,11 @@ $color-text-body: #fff;
 }
 
 .divtopicsothers{
-  margin-top: 9vh;
-  margin-left: 45vh;    
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 9vh auto 0;    
   animation: FadeIn 1.5s ease-in-out forwards;   
 }
 
@@ -120,6 +129,7 @@ $color-text-body: #fff;
   font-family: $font-secondary;
   color: $color-secondary;  
 }
+
 
 @keyframes FadeIn {
   from {
@@ -138,7 +148,16 @@ $color-text-body: #fff;
     gap: 3vh;
     margin-top: 6vh;
     margin-left: -5vh;  
+     display: grid;
+    justify-content: center;
+    align-items: center;  
   }
+
+  .divtopics2industry{
+      position: relative;     
+      bottom: 2.2vh;
+      left: 9vh;
+    }
 
   .divtopics1industry{
     margin-left: 9vh;
@@ -146,12 +165,12 @@ $color-text-body: #fff;
 
   .divtopicsestatal{
     margin-top: 5vh;
-    margin-left: 10vh;    
+    margin-left: 1vh;    
   }
 
   .divtopicsector{
     margin-top: 5vh;
-    margin-left: 9vh;       
+    margin-left: 3vh;       
   }
 
   .divtopicsconstruction{
@@ -159,54 +178,76 @@ $color-text-body: #fff;
     gap: 3vh;
     margin-top: 4vh;
     margin-left: 2vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;  
+  }
+  
+   .divtopics2construction{
+    position: relative;      
+    bottom: 2.8vh;
   }
 
   .divtopicspublic{
     margin-top: 4vh;
-    margin-left: 9vh;     
+    margin-left: 2vh;     
   }
 
   .divtopicsothers{
     margin-top: 2vh;
-    margin-left: 26vh;    
+    margin-left: 7vh;    
     animation: FadeIn 1.5s ease-in-out forwards;   
   }  
   
 }  
 
 @media screen and (min-width: 360px) and (max-width: 730px) {
-    .divtopicsindustry{
-      display: flex; 
+    .divtopicsindustry{       
       gap: 3vh;
-      margin-top: 6vh;
-      margin-left: 1vh;  
+      position: relative;
+      right: 4vh;
+      display: grid;
+      justify-content: center;
+      align-items: center;       
+    }
+
+    .divtopics2industry{
+      position: relative;     
+      bottom: 2vh;
     }
 
     .divtopicsestatal{
       margin-top: 5vh;
-      margin-left: 1vh;    
+      margin-left: 1.5vh;    
     }
 
     .divtopicsector{
       margin-top: 5vh;
-      margin-left: 9vh;       
+      margin-left: 3vh;       
     }
 
     .divtopicsconstruction{
-      display: flex; 
       gap: 3vh;
-      margin-top: 4vh;
-      margin-left: 1vh;
+      position: relative;
+      right: 4.3vh;
+      display: grid;
+      justify-content: center;
+      align-items: center;   
+    }
+
+    .divtopics2construction{
+      position: relative;      
+      bottom: 2.5vh;
     }
 
     .divtopicspublic{
       margin-top: 4vh;
-      margin-left: 4vh;     
+      margin-left: 2vh;     
     }
 
     .divtopicsothers{
       margin-top: 2vh;
-      margin-left: 8vh;        
+      margin-left: 5vh;        
     }  
 
 

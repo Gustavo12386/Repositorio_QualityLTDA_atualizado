@@ -6,7 +6,7 @@ import logo from "../../../public/logo_veritas.png"
 export default function Introduction() {
     return(
        <main>
-          <section className={styles.introduction}>
+          <section id="#inicio" className={styles.introduction}>
              <div className={styles.interface}>
                <div className={styles.flex}>
                   <div className={styles['text-top']}>

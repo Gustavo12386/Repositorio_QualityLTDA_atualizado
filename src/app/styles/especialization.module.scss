@@ -70,7 +70,6 @@ $color-text-body: #fff;
 
 .title3{   
   font-family: $main-font; 
-  white-space: nowrap;
   height: 68px;
   font-weight: 700;
   font-size: 29px;  
@@ -104,14 +103,14 @@ h1 .title3{
   font-family: $font-secondary;
   font-size: 18px;
   color: $color-secondary;  
-  line-height: 1.5;  
+  line-height: 1.5; 
 }
 
 .divtopics1{
     width: 100%;     
     position: relative;
     top: -10px;
-    padding: 0 10vh;
+    padding: 0 20vh;
 }
 
 .divtopics2{
@@ -134,6 +133,9 @@ h1 .title3{
    .text-top{    
     padding: 0 25px;      
     margin-left: -2vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
   }
 
   .text-top2{
@@ -164,8 +166,9 @@ h1 .title3{
   }
 
   .topics1{    
-    width: 310px;
-    margin-left: -40px;
+    width: 310px;    
+    position: relative;
+    left: 3vh;
   }
 
   .topics2{
