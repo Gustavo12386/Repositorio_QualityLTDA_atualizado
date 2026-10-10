@@ -4,7 +4,7 @@ import indicator from '../../../public/indicador(azul).png'
 
 export default function Contact(){
     return(
-         <section className={styles.contact}>
+         <section id="contato" className={styles.contact}>
       <div className={styles.container}>
         <h1 className={styles.title}>Fale Conosco</h1>
 

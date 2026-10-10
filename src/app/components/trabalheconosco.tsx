@@ -2,7 +2,7 @@ import styles from "../styles/trabalheconosco.module.scss";
 
 export default function TrabalheConosco() {
    return(
-     <section className={styles.trabalheconosco}>
+     <section id="trabalheconosco" className={styles.trabalheconosco}>
        <div className={styles.interface}>
             <div className={styles.divcontent}>
                 <h1 className={styles.title}>Trabalhe Conosco</h1>

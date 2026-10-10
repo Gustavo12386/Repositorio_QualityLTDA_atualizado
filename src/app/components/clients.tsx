@@ -15,7 +15,7 @@ export default function Clients() {
   const [pageselected, handleChange] = useState(0); 
 
   return(
-   <section className={styles.clients}>
+   <section id="clientes" className={styles.clients}>
      <div className={styles.interface}>
        <div className={styles.divtitle}>
          <h1 className={styles.title}>Nossos Clientes</h1>

@@ -2,7 +2,7 @@ import styles from "../styles/especialization.module.scss";
 
 export default function Especialization(){
     return(
-     <section className={styles.especialization}>
+     <section id="especialidades" className={styles.especialization}>
         <div className={styles.interface}>
           <div className={styles.divtitle}>
                 <h1 className={styles.title1}>Nossas Especialidades</h1>

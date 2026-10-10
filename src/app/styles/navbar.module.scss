@@ -6,58 +6,45 @@ $color-secondary: #4d4f4f;
 $color-text-black: #000;
 $color-text-body: #fff;
 
-.interface{
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 30px;
-  background-color: #fff;
   z-index: 1000;
-  box-sizing: border-box;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
 }
 
-.header > .interface{
+.interface {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.headerTop {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  width: 100%;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 15px 20px;
 }
 
-.header a{
-  color: $color-text-black;
-  text-decoration: none;
+.mobile-menu-icon {
+  display: none;
+}
+
+.menu{
   font-family: $font-secondary;
-  font-size: 16px;
+
 }
 
-header a:hover{
-  color: $color-secondary;  
+.menu2 {
+  display: none;
 }
 
-.header nav ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header nav ul li{
-  display: inline-block;
-  padding: 0 20px;
-}
-
-header .btn-contact button,
-header .btn-contact2 button {
-  padding: 15px 25px;
+.btn-contact button {
+  padding: 20px 40px;
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 18px;
   font-family: $main-font;
   font-weight: 700;
   color: $color-text-body;
@@ -65,127 +52,192 @@ header .btn-contact2 button {
   border-radius: 30px;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-header .btn-contact2 button {
-  display: none;
-}
-
-header .btn-contact button:hover {
+.btn-contact button:hover {
   background-color: $color-secondary;
 }
 
-.mobile-menu-icon,
-.mobile-menu {
-  display: none;
+.header .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.header .menu ul li a {
+  display: inline-block;
+  color: $color-text-black;
+  text-decoration: none;
+  font-family: $font-secondary;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header .menu ul li a:hover {
+  color: $main-color;
+  transform: translateY(-2px);
+}
+
+
 @media screen and (min-width: 744px) and (max-width: 1440px) {
-  .header {
-    padding: 12px 20px;
+  .interface {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
-   .header > .interface {
+  .headerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 12px;
+    padding: 15px 40px;
   }
 
-  .header nav ul li {
-    padding: 0 10px;
-    margin-left: 1;
+  .divlogo {
+    flex-shrink: 0;
   }
 
-  .nav {
-    width: auto;
+  .logo {
+    display: block;
+    width: 85px;
+    height: auto;
   }
 
-  .header .btn-contact button {
-    padding: 20px 30px;
+  .menu {
+    flex: 1;
+    min-width: 5;
   }
 
-  .header a{
-    padding: 10px 10px;
-    font-size: 14px;
+  .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0;
+    padding: 5;
+    list-style: none;
+  }
+
+  .menu ul li {
+    padding: 5 5 5 40;
+  }
+
+  .menu ul li a {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .btn-contact {
+    flex-shrink: 0;
+  }
+
+  .btn-contact button {
+    padding: 12px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
   }
     
 }
 
 @media screen and (min-width: 360px) and (max-width: 730px) {
-    .header {
-     padding: 10px 16px; 
-    }    
-
-    .header > .interface {
-    display: flex;
-    flex-direction: row;    
-    justify-content: space-between;
-    align-items: center;
-    gap: 0;
-    position: relative;
-    
+    .headerTop {
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 10px 16px;
   }
-    
-    .logo{
-      width: 77px;
-      height: auto;
-      max-height: 60px;
-      position: static; 
-      margin-top: 8px;
-    }  
 
-    header .btn-contact2 button {
-        display: block;
-    padding: 10px 1px;
+  .menu {
+    display: none;
+  }  
+
+  .logo {
+    display: block;
+    width: 77px;
+    height: auto;
+  } 
+
+  .btn-contact button {
+    padding: 10px 12px;
     font-size: 11px;
-    position: static;
-       
-    }
-
-    header .btn-contact button {
-       display: none;
-    }
-
-    .menu{
-      display: none;
-    }    
-
-    .mobile-menu-icon{
-      display: block;      
-      cursor: pointer;
-      width: 30px;      
-      background: none;   
-      border: none;     
-      position: relative;     
-      top: 8px;
-    }
-
-    .mobile-menu{
-       display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      width: 100%;        
-      flex-basis: 100%;
-      margin-bottom: 30px;
-      position: relative;      
-    }
-
-    .mobile-menu .menu2{
-       display: block;       
-    }
-
-    header a:hover{
-      background-color: $main-color;
-      padding: 5px 20px;
-      color: $color-text-body;
-      
-    }
-
-    .header a {
-      font-size: 8px;
-    }
-
-    body {
-    padding-top: 80px;
+    white-space: nowrap;
+   
   }
 
+  .mobile-menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    padding: 40px;
+    
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .interface {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .menu2 {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 0 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  .menu2 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 14px;
+  }
+
+  .menu2 ul li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .menu2 ul li a {
+    display: inline-block;
+    padding: 8px 16px;
+    color: $color-text-black;
+    font-family: $font-secondary;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .menu2 ul li a:hover {
+    color: $main-color;
+  }
 }  

@@ -21,54 +21,71 @@ export default function Navbar() {
   return(
     <header className={styles.header}>
         <div className={styles.interface}>
-            <div className={styles.divlogo}>
-                <a href="#">
-                <Image
-                    src={logo}
-                    alt="Logo"
-                    className={styles.logo}
-                />
-                </a>
-            </div>
-            <nav className={styles.menu}>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Atuações</a></li> 
-                    <li><a href="#">Portfólio</a></li>
-                    <li><a href="#">Clientes</a></li>
-                    <li><a href="#">Contato</a></li>                  
-                </ul>              
-            </nav>
-            <div className={styles['btn-contact']}>
-                <a href="#">
-                    <button>Trabalhe Conosco</button>
-                </a>  
-            </div>
+            <div className={styles.headerTop}>
+
+      <div className={styles.divlogo}>
+        <a href="#inicio">
+          <Image
+            src={logo}
+            alt="Logo"
+            className={styles.logo}
+          />
+        </a>
+      </div>
+
+     
+      <nav className={styles.menu}>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#atuacoes">Atuações</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button
+        type="button"
+        onClick={menushow}
+        className={styles['mobile-menu-icon']}
+        aria-label={menunav ? "Abrir menu" : "Fechar menu"}
+        aria-expanded={!menunav}
+      >
+        <Image
+          src={menumobile}
+          alt=""
+          width={30}
+          height={30}
+        />
+      </button>
+
+     
+      <div className={styles['btn-contact']}>
+        <a href="#trabalheconosco">
+          <button>Trabalhe Conosco</button>
+        </a>
+      </div>
             
-            <div className={styles['mobile-menu']}>               
-               <button onClick={menushow} className={styles['mobile-menu-icon']}>
-                  <Image src={menumobile} alt="menu" width='30'/>
-                </button> 
-             {!menunav && (
-               <nav className={styles.menu2}>
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Atuações</a></li> 
-                    <li><a href="#">Portfólio</a></li>
-                    <li><a href="#">Clientes</a></li>
-                    <li><a href="#">Contato</a></li>                  
-                </ul>                 
-               </nav>
-             )}                
-            </div>
-            <div className={styles['btn-contact2']}>
-                    <a href="#">
-                        <button>Trabalhe Conosco</button>
-                    </a>  
-            </div>  
-        </div>
+      
+
+    </div>
+
+    
+    {!menunav && (
+      <nav className={styles.menu2}>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#atuacoes">Atuações</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    )}
+           
+   </div>     
     </header>
   );   
  

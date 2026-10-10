@@ -4,7 +4,7 @@ import svg from '../../../public/indicador.png'
 
 export default function Acting(){
     return(
-      <section className={styles.acting}>
+      <section id="atuacoes" className={styles.acting}>
          <div className={styles.interface}>
             <div className={styles.divtitle}>
                 <h1 className={styles.title}>Áreas de Atuação</h1>                

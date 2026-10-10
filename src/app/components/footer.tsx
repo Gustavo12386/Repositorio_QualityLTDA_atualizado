@@ -18,13 +18,13 @@ export default function Footer(){
                    <div className={styles.topics1}>
                       <h1 className={styles.title}>Navegação</h1>
                        <div className={styles.topicslist}>
-                         <a href='#' className={styles.topic1}>Início</a>
-                        <a href='#' className={styles.topic1}>Especialidades</a>
-                        <a href='#' className={styles.topic1}>Atuações</a>
-                        <a href='#' className={styles.topic1}>Portfólio</a>
-                        <a href='#' className={styles.topic1}>Clientes</a>
-                        <a href='#' className={styles.topic1}>Contato</a>
-                        <a href='#' className={styles.topic1}>Trabalhe Conosco</a>
+                         <a href='#inicio' className={styles.topic1}>Início</a>
+                        <a href='#especialidades' className={styles.topic1}>Especialidades</a>
+                        <a href='#atuacoes' className={styles.topic1}>Atuações</a>
+                        <a href='#portfolio' className={styles.topic1}>Portfólio</a>
+                        <a href='#clientes' className={styles.topic1}>Clientes</a>
+                        <a href='#contato' className={styles.topic1}>Contato</a>
+                        <a href='#trabalheconosco' className={styles.topic1}>Trabalhe Conosco</a>
                        </div>                     
                    </div>
                    <div className={styles.division2}></div>                     

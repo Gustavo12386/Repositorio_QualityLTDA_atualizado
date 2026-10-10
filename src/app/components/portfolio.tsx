@@ -25,7 +25,7 @@ export default function Portfolio(){
   const currentProject = projects.slice(quantityStart, quantityEnd); 
 
   return(
-    <section className={styles.portfolio}>
+    <section id="portfolio" className={styles.portfolio}>
         <div className={styles.interface}>
           <div className={styles.divtitle}>
             <h1 className={styles.title}>Nosso Portfólio</h1>
