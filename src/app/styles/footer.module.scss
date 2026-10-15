@@ -43,7 +43,7 @@ $color-text-body: #fff;
 
 .topics1{   
    margin-top: 50px;  
-   border-color: #fff;
+   border-color: $color-text-body;
 }
 
 .topics2{
@@ -81,7 +81,7 @@ $color-text-body: #fff;
 }
 
 .topic1:hover{
-    color: darken($color-text-body, 10%);
+    color: #c1bcbc;
 }
 
 .division2{
