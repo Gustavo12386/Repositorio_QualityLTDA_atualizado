@@ -1,13 +1,50 @@
+"use client";
 import styles from '../styles/contact.module.scss';
 import Image from 'next/image';
 import indicator from '../../../public/indicador(azul).png'
+import Message from './services/message';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 export default function Contact(){
+    const formRef = useRef<HTMLFormElement>(null);
+    const [message, setMessage] = useState<string | undefined>('');
+    const [type, setType] = useState<string | undefined>('');
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+       e.preventDefault();
+
+       if (!formRef.current) return;
+
+       // chaves do EmailJS
+      const SERVICE_ID = 'service_rs668dl';
+      const TEMPLATE_ID = 'template_o0hsgcy';
+      const PUBLIC_KEY = 'cWXnv1CEckkrUc0vq';
+
+      emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, {
+        publicKey: PUBLIC_KEY,
+      }).then(
+        () => {
+          setMessage('Informações enviadas com sucesso!');
+          setType('success');
+          formRef.current?.reset();
+        },
+         (error) => {
+          console.error('Erro ao enviar:', error);
+          setMessage('Falha ao enviar as informações tente novamente!');
+          setType('error');
+        }
+      )
+    }
+    
+
     return(
-         <section id="contato" className={styles.contact}>
+    <section id="contato" className={styles.contact}>
       <div className={styles.container}>
         <h1 className={styles.title}>Fale Conosco</h1>
-
+        {message && <Message type={type!} msg={message}/>} 
         <div className={styles.grid}>
         
           <div className={styles.location}>
@@ -44,22 +81,22 @@ export default function Contact(){
               Entre em contato conosco através do formulário abaixo.
               Teremos o maior prazer em lhe atender!
             </p>
-
-            <form className={styles.form}>
+            
+            <form className={styles.form} ref={formRef} onSubmit={sendEmail}>
               <div className={styles.field}>              
-                <input className={styles.input} type="text" id="name" name="name" placeholder="Nome" />
+                <input className={styles.input} type="text" id="name" name="name" placeholder="Nome" required/>
               </div>
 
               <div className={styles.field}>               
-                <input className={styles.input} type="email" id="email" name="email" placeholder="Email" />
+                <input className={styles.input} type="email" id="email" name="email" placeholder="Email" required/>
               </div>
 
               <div className={styles.field}>                
-                <input className={styles.input} type="tel" id="phone" name="phone" placeholder="Telefone" />
+                <input className={styles.input} type="tel" id="phone" name="phone" placeholder="Telefone" required/>
               </div>
 
               <div className={styles.field}>               
-                <select className={styles.select} id="time" name="time" defaultValue="">
+                <select className={styles.select} id="time" name="time" defaultValue="" required>
                   <option value="">Melhor Horário de Contato</option>
                   <option value="manha">Manhã</option>
                   <option value="tarde">Tarde</option>
@@ -68,7 +105,7 @@ export default function Contact(){
               </div>
 
               <div className={styles.field}>               
-                <textarea className={styles.textarea} id="message" name="message" placeholder="Mensagem" />
+                <textarea className={styles.textarea} id="message" name="message" placeholder="Mensagem" required/>
               </div>
 
               <button className={styles.button} type="submit">Enviar</button>
