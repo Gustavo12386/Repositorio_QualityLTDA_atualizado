@@ -2,6 +2,7 @@
 import styles from "../styles/trabalheconosco.module.scss";
 import Message from './services/message';
 import { useRef, useState } from 'react';
+import { ChangeEvent } from 'react';
 
 export default function TrabalheConosco() {
     const formRef = useRef<HTMLFormElement>(null);    
@@ -10,7 +11,7 @@ export default function TrabalheConosco() {
     const [text, setText] = useState('');
     const limit = 11;
     
-    const handleChange = (e) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
       setText(e.target.value);
     };
 

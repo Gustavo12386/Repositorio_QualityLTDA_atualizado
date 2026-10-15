@@ -3,6 +3,7 @@ import styles from '../styles/contact.module.scss';
 import Image from 'next/image';
 import indicator from '../../../public/indicador(azul).png'
 import Message from './services/message';
+import { ChangeEvent } from 'react';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -14,7 +15,7 @@ export default function Contact(){
     const [text, setText] = useState('');
     const limit = 11;
 
-    const handleChange = (e) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
       setText(e.target.value);
     };
 
