@@ -126,11 +126,11 @@ $color-text-body: #fff;
   color: $color-text-body;
   font-family: $main-font;
   font-weight: 700;
-  cursor: pointer;
+  cursor: pointer; 
+}
 
-  &:hover {
-     background-color: color-mix(in srgb, $main-color, black 10%);
-  }
+button:hover{
+  background-color: $color-secondary;
 }
 
 
