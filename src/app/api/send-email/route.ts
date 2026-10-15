@@ -28,22 +28,22 @@ export async function POST(req: Request) {
 
     // Configuração do transportador do Nodemailer 
     const transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com', //host SMTP
+      host: 'smtps.uhserver.com', 
       port: 465, 
       secure: true, 
       auth: {
-        user: 'calderarogustavo@gmail.com', // e-mail de envio
-        pass: 'rgdx lqhj yaro dhgn', 
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS, 
       },
     });
 
     // Estrutura base de opções do e-mail
     const mailOptions: MailOptions = {
-      from: '"Formulário de Contato" <calderarogustavo@gmail.com>',
-      to: 'calderarogustavo@gmail.com',
+      from: '"Formulário de Contato" <quality@qualityltda.com.br>',
+      to: 'quality@qualityltda.com.br',
       subject: `Interesse em Oportunidades da Quality - ${name}`,
       html: `
-        <h3>Novo contato pelo formulário Trabalhe Conosco</h3>
+        <h3>Informações do Candidato</h3>
         <p><strong>Nome:</strong> ${name}</p>
         <p><strong>E-mail do Candidato:</strong> ${email}</p>
         <p><strong>Telefone:</strong> ${phone}</p>

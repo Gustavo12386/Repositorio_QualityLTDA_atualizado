@@ -6,7 +6,13 @@ import { useRef, useState } from 'react';
 export default function TrabalheConosco() {
     const formRef = useRef<HTMLFormElement>(null);    
     const [message, setMessage] = useState<string | undefined>('');
-    const [type, setType] = useState<string | undefined>('');   
+    const [type, setType] = useState<string | undefined>('');  
+    const [text, setText] = useState('');
+    const limit = 11;
+    
+    const handleChange = (e) => {
+      setText(e.target.value);
+    };
 
     const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
        e.preventDefault();
@@ -56,7 +62,10 @@ export default function TrabalheConosco() {
                         <input className={styles.input} type="email" name="email" id="email" placeholder="Email"/>
                     </div>
                     <div className={styles.divinput}>                        
-                        <input className={styles.input} type="text" name="phone" id="phone" placeholder="Telefone"/>
+                        <input className={styles.input}
+                        type="text" name="phone" id="phone"
+                        placeholder="Telefone" value={text}
+                        onChange={handleChange} maxLength={limit} />
                     </div>
                     <div className={styles.divinput}>                        
                         <input className={styles.input} type="file" accept=".pdf, .png, .jpg, .jpeg" name="file" id="file"/>

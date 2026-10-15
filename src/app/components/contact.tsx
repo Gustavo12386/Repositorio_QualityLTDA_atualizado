@@ -11,6 +11,12 @@ export default function Contact(){
     const formRef = useRef<HTMLFormElement>(null);
     const [message, setMessage] = useState<string | undefined>('');
     const [type, setType] = useState<string | undefined>('');
+    const [text, setText] = useState('');
+    const limit = 11;
+
+    const handleChange = (e) => {
+      setText(e.target.value);
+    };
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
        e.preventDefault();
@@ -18,7 +24,7 @@ export default function Contact(){
        if (!formRef.current) return;
 
        // chaves do EmailJS
-      const SERVICE_ID = 'service_rs668dl';
+      const SERVICE_ID = 'service_4qthbzt';
       const TEMPLATE_ID = 'template_o0hsgcy';
       const PUBLIC_KEY = 'cWXnv1CEckkrUc0vq';
 
@@ -92,7 +98,8 @@ export default function Contact(){
               </div>
 
               <div className={styles.field}>                
-                <input className={styles.input} type="tel" id="phone" name="phone" placeholder="Telefone" required/>
+                <input className={styles.input} type="tel" id="phone" name="phone" placeholder="Telefone" value={text}
+                onChange={handleChange} maxLength={limit} required/>
               </div>
 
               <div className={styles.field}>               
