@@ -129,7 +129,7 @@ $color-text-body: #fff;
   cursor: pointer;
 
   &:hover {
-    background-color: darken($main-color, 10%);
+     background-color: color-mix(in srgb, $main-color, black 10%);
   }
 }
 
