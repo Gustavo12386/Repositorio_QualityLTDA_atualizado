@@ -17,6 +17,7 @@ export default function Contact(){
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
       setText(e.target.value);
+      
     };
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -34,6 +35,7 @@ export default function Contact(){
         publicKey: PUBLIC_KEY,
       }).then(
         () => {
+          setText(''); 
           setMessage('Informações enviadas com sucesso!');
           setType('success');
           formRef.current?.reset();
@@ -50,8 +52,7 @@ export default function Contact(){
     return(
     <section id="contato" className={styles.contact}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Fale Conosco</h1>
-        {message && <Message type={type!} msg={message}/>} 
+        <h1 className={styles.title}>Fale Conosco</h1>        
         <div className={styles.grid}>
         
           <div className={styles.location}>
@@ -88,7 +89,7 @@ export default function Contact(){
               Entre em contato conosco através do formulário abaixo.
               Teremos o maior prazer em lhe atender!
             </p>
-            
+            {message && <Message type={type!} msg={message}/>} 
             <form className={styles.form} ref={formRef} onSubmit={sendEmail}>
               <div className={styles.field}>              
                 <input className={styles.input} type="text" id="name" name="name" placeholder="Nome" required/>
@@ -99,7 +100,7 @@ export default function Contact(){
               </div>
 
               <div className={styles.field}>                
-                <input className={styles.input} type="tel" id="phone" name="phone" placeholder="Telefone" value={text}
+                <input className={styles.input} type="text" id="phone" name="phone" placeholder="Telefone" value={text}
                 onChange={handleChange} maxLength={limit} required/>
               </div>
 

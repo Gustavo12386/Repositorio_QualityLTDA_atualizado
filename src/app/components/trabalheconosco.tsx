@@ -10,9 +10,9 @@ export default function TrabalheConosco() {
     const [type, setType] = useState<string | undefined>('');  
     const [text, setText] = useState('');
     const limit = 11;
-    
+
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-      setText(e.target.value);
+      setText(e.target.value);     
     };
 
     const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -32,10 +32,12 @@ export default function TrabalheConosco() {
 
             const result = await response.json();
 
-            if (response.ok && result.success) {
+            if (response.ok && result.success) {         
+              setText('');     
               setMessage('Informações enviadas com sucesso!');
               setType('success');
-              formRef.current?.reset();
+              formRef.current?.reset();             
+              
             } else {
               alert(`Erro informado pelo servidor: ${result.error}`);
             }
@@ -50,11 +52,11 @@ export default function TrabalheConosco() {
      <section id="trabalheconosco" className={styles.trabalheconosco}>
        <div className={styles.interface}>
             <div className={styles.divcontent}>
-                <h1 className={styles.title}>Trabalhe Conosco</h1>
-                {message && <Message type={type!} msg={message}/>} 
+                <h1 className={styles.title}>Trabalhe Conosco</h1>                
                 <p className={styles.subtitle}>Se você se identificou com a nossa empresa e deseja enviar seu currículo,
                  preencha o formulario abaixo.
                 </p>
+                {message && <Message type={type!} msg={message}/>} 
                 <form className={styles.form} ref={formRef} onSubmit={sendEmail}>
                     <div className={styles.divinput}>                        
                         <input className={styles.input} type="text" name="name" id="name" placeholder="Nome"/>
