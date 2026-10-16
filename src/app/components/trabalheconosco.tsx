@@ -9,7 +9,7 @@ export default function TrabalheConosco() {
     const [message, setMessage] = useState<string | undefined>('');
     const [type, setType] = useState<string | undefined>('');  
     const [text, setText] = useState('');
-    const limit = 11;
+    const limit = 15;
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
       setText(e.target.value);     
